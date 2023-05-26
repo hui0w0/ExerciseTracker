@@ -1,0 +1,837 @@
+.fp-is-overflow .fp-overflow.fp-auto-height,
+.fp-is-overflow .fp-overflow.fp-auto-height-responsive,
+.fp-is-overflow>.fp-overflow {
+    overflow-y: unset;
+}
+
+* {
+    font-family: 'Hind', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+.nav a,
+#displayName {
+    font-size: 18px;
+    top: 10px;
+}
+
+.navbar-default .navbar-nav>li>a,
+.share-icon {
+    color: #436D8F;
+    font-weight: 500;
+}
+
+.navbar-default:hover .navbar-nav>li>a:hover,
+#displayName:hover,
+.share-icon:hover {
+    opacity: 0.6;
+    color: #436D8F;
+    font-weight: 500;
+}
+
+
+.navbar {
+    position: absolute;
+    min-height: 70px;
+    width: 100%;
+    margin-bottom: 20px;
+    top: 0%;
+    border: 1px solid transparent;
+    background-color: #fafee5;
+    z-index: 1;
+}
+
+.fa-share-nodes {
+    padding-right: 20px;
+}
+
+.navbar-brand {
+    width: 150px;
+    padding-left: 25%;
+}
+
+.navright {
+    float: right;
+    display: flex;
+    align-items: center;
+    padding: 1.5% 3%;
+}
+
+.icon-back {
+    width: 20%;
+    padding: 5% 0 0 5%;
+
+}
+
+.back {
+    color: black;
+}
+
+.back:hover {
+    color: rgb(0, 0, 0, 0.5);
+}
+
+#Logo {
+    margin: 2.5%;
+}
+
+
+.fp-watermark {
+    display: none;
+}
+
+/* Welcome Page */
+
+/* ---------- Fog ---------- */
+.fogwrapper {
+    height: 20%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    -webkit-filter: blur(1px) grayscale(0.2) saturate(1.2) sepia(0.2);
+    filter: blur(1px) grayscale(0.2) saturate(1.2) sepia(0.2);
+}
+
+#foglayer_01,
+#foglayer_02,
+#foglayer_03 {
+    height: 100%;
+    position: absolute;
+    width: 200%;
+}
+
+#foglayer_01 .image01,
+#foglayer_01 .image02,
+#foglayer_02 .image01,
+#foglayer_02 .image02,
+#foglayer_03 .image01,
+#foglayer_03 .image02 {
+    float: left;
+    height: 100%;
+    width: 50%;
+}
+
+#foglayer_01 {
+    -webkit-animation: foglayer_01_opacity 10s linear infinite, foglayer_moveme 15s linear infinite;
+    -moz-animation: foglayer_01_opacity 10s linear infinite, foglayer_moveme 15s linear infinite;
+    animation: foglayer_01_opacity 10s linear infinite, foglayer_moveme 15s linear infinite;
+}
+
+#foglayer_02,
+#foglayer_03 {
+    -webkit-animation: foglayer_02_opacity 21s linear infinite, foglayer_moveme 13s linear infinite;
+    -moz-animation: foglayer_02_opacity 21s linear infinite, foglayer_moveme 13s linear infinite;
+    animation: foglayer_02_opacity 21s linear infinite, foglayer_moveme 13s linear infinite;
+}
+
+/* ---------- Moving Fog ---------- */
+/*
+    'size: cover' || 'size: 100%'; results remain the same
+    'attachment: scroll' can be added or removed; results remain the same
+    'attachment: fixed' causing unexpected results in Chrome
+    'repeat-x' || 'no-repeat'; results remain the same
+  */
+#foglayer_01 .image01,
+#foglayer_01 .image02 {
+    background: center center/cover no-repeat transparent;
+}
+
+#foglayer_02 .image01,
+#foglayer_02 .image02,
+#foglayer_03 .image01,
+#foglayer_03 .image02 {
+    background: center center/cover no-repeat transparent;
+}
+
+/* ---------- Keyframe Layer 1 ---------- */
+@-webkit-keyframes foglayer_01_opacity {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: .9;
+    }
+}
+
+@-moz-keyframes foglayer_01_opacity {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: .9;
+    }
+}
+
+@-o-keyframes foglayer_01_opacity {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: .9;
+    }
+}
+
+@keyframes foglayer_01_opacity {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: .9;
+    }
+}
+
+/* ---------- Keyframe Layer 2 ---------- */
+@-webkit-keyframes foglayer_02_opacity {
+    0% {
+        opacity: .8;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes foglayer_02_opacity {
+    0% {
+        opacity: .8;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes foglayer_02_opacity {
+    0% {
+        opacity: .7;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes foglayer_02_opacity {
+    0% {
+        opacity: .7;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* ---------- Keyframe Layer 3 ---------- */
+@-webkit-keyframes foglayer_03_opacity {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: .8;
+    }
+}
+
+@-moz-keyframes foglayer_03_opacity {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: .8;
+    }
+}
+
+@-o-keyframes foglayer_03_opacity {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: .8;
+    }
+}
+
+@keyframes foglayer_03_opacity {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: .8;
+    }
+}
+
+/* ---------- Keyframe moveMe ---------- */
+@-webkit-keyframes foglayer_moveme {
+    0% {
+        left: 0;
+    }
+
+    100% {
+        left: -100%;
+    }
+}
+
+@-moz-keyframes foglayer_moveme {
+    0% {
+        left: 0;
+    }
+
+    100% {
+        left: -100%;
+    }
+}
+
+@-o-keyframes foglayer_moveme {
+    0% {
+        left: 0;
+    }
+
+    100% {
+        left: -100%;
+    }
+}
+
+@keyframes foglayer_moveme {
+    0% {
+        left: 0;
+    }
+
+    100% {
+        left: -100%;
+    }
+}
+
+@media only screen and (min-width: 280px) and (max-width: 767px) {
+
+    #foglayer_01 .image01,
+    #foglayer_01 .image02,
+    #foglayer_02 .image01,
+    #foglayer_02 .image02,
+    #foglayer_03 .image01,
+    #foglayer_03 .image02 {
+        width: 100%;
+    }
+}
+
+
+.fog {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+}
+
+
+.nextbtn1,
+.retrybtn1 {
+    padding: 5px 10px;
+    background-color: rgba(196, 81, 77, 0.6);
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    border: 1px solid black;
+    font-weight: 500;
+    font-family: sans-serif;
+    transition: 0.5s;
+    margin: 10px;
+    width: 25%;
+    text-align: center;
+    display: inline-block;
+}
+
+.nextbtn1:hover,
+.retrybtn1:hover {
+    background-color: rgba(196, 81, 77, 0.8);
+    color: white;
+    box-shadow: 1.5px 1.5px 2px black;
+    border-radius: 50px;
+}
+
+.nextbtn2,
+.retrybtn2 {
+    background-color: rgba(67, 109, 143, 0.8);
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    border: 2px solid rgb(185, 185, 185);
+    font-weight: 500;
+    font-family: sans-serif;
+    margin: 10px;
+    width: 25%;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    transition: 0.3s;
+    padding: 5px 10px;
+}
+
+.nextbtn2:hover,
+.retrybtn2:hover {
+    background-color: rgba(67, 109, 143, 1);
+    color: white;
+    box-shadow: 1.5px 1.5px 2px black;
+    border-radius: 50px;
+}
+
+.heading {
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 12rem;
+    font-weight: 600;
+    filter: blur();
+    color: white;
+    opacity: 60% !important;
+    text-shadow: 0 0 2px white;
+
+}
+
+.effect {
+    letter-spacing: 4px;
+    transition: text-shadow 200ms;
+    animation-name: animateTextEffect;
+    animation-duration: 2.5s;
+    animation-delay: 2.1s;
+}
+
+.effect:hover {
+    text-shadow: rgb(255, 166, 166) -5px 0, rgb(0, 255, 255) 5px 0;
+}
+
+@keyframes animateTextEffect{
+    0%{
+        text-shadow: rgb(255, 166, 166) 0 0, rgb(0, 255, 255) 0 0;
+    }
+
+    50%{
+        text-shadow: rgb(255, 166, 166) -6px 0, rgb(0, 255, 255) 6px 0;
+    }
+
+    100%{
+        text-shadow: rgb(255, 166, 166) 0 0, rgb(0, 255, 255) 0 0;
+    }
+}
+
+.description {
+    margin-top: 60px;
+}
+
+.s1 {
+    color: white;
+}
+
+.s2s2,
+.s2 {
+    text-align: center;
+    color: black;
+}
+
+.icons {
+    margin: 20px;
+}
+
+.face {
+    padding-top: 50px;
+}
+
+.link {
+    text-align: center;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto 0;
+}
+
+.flex-container>div {
+    margin: 0px;
+    padding: 20px 0px;
+}
+
+#s1 .bg {
+    background-image: url(Images/welcome-bg.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-y: 100%;
+    height: 100vh;
+    opacity: 70%;
+    display: flex;
+    align-items: center;
+}
+
+.welc-content {
+    color: white;
+    text-align: center;
+}
+
+#s1 p {
+    color: white;
+}
+
+.s2 {
+    color: white;
+    display: inline-block;
+
+}
+
+#ans {
+    color: white;
+    z-index: 1;
+}
+
+#qn {
+    color: white;
+    display: block;
+    position: absolute;
+    z-index: 1;
+}
+
+#fname {
+    border-radius: 20px;
+    right: 20px;
+    padding: 5px 10px;
+}
+
+.submit-icon {
+    color: white;
+    padding-left: 10px;
+}
+
+.welc-form {
+    display: flex;
+    align-items: center;
+}
+
+
+/* Main Page */
+.fbutton {
+    background: none;
+    padding: 0px;
+    border: none;
+}
+
+.card .unlock {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 100%;
+    background-color: white;
+}
+
+.card .lock {
+    width: 100%;
+    background-color: white;
+    opacity: 60%;
+    pointer-events: none;
+}
+
+.card .unlock:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+}
+
+.card .s2content {
+    padding: 10%;
+}
+
+.card-padding {
+    padding: 3% 5%;
+}
+
+.runleftex {
+    padding: 0 2.5%;
+    background: linear-gradient(#F3F774, #5FB2F5);
+    height: 100vh;
+}
+
+.runrightex {
+    height: 100%;
+}
+
+
+#s2 .h2 {
+    font-family: 'Arvo', serif;
+}
+
+.exTitle,
+.s2content p {
+    text-align: center;
+}
+
+.imglock {
+    display: block;
+    z-index: -1;
+}
+
+.yogaimg {
+    z-index: -1;
+}
+
+.ex-header {
+    top: 20%;
+    left: 32%;
+    position: absolute;
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 4rem;
+    font-weight: 600;
+    filter: blur();
+    color: white;
+    opacity: 60% !important;
+    text-shadow: 0 0 9px black;
+}
+
+
+.lock-icon {
+    color: black;
+    position: absolute;
+    left: 78%;
+    width: 14%;
+    height: 10vh;
+    color: #8C1511;
+    opacity: 100%;
+    box-shadow: 2px 4px 8px black;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+#changeName a {
+    color: white !important;
+}
+
+/* yogaInput */
+.s3bgimg {
+    display: block;
+    position: absolute;
+    background-image: url(Images/yoga_bg.png);
+    background-size: 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+    height: 80vh;
+    width: 100%;
+}
+
+.yoga-mat {
+    width: 21%;
+    display: block;
+    position: absolute;
+    z-index: 2;
+    right: -3%;
+    bottom: -1%;
+}
+
+.yogaleftex {
+    padding: 0 2.5%;
+    background: linear-gradient(#F3F774, #F57C78);
+    height: 100vh;
+}
+
+.yogarightex {
+    height: 100%;
+}
+.runrightex, .yogarightex{
+    padding:5% 0;
+}
+.exform {
+    padding: 0 10%;
+    margin: 0 10%;
+}
+
+
+
+.exform .header,
+.exform .subheader {
+    font-family: 'Arvo', serif;
+    text-align: center;
+}
+
+.exform .header {
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.exform .subheader {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.exform label {
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.exform input {
+    display: inline-block;
+    width: 80%;
+}
+
+.exform form {
+    text-align: left;
+}
+
+.exform .submit1,
+.exform .submit2 {
+    width: 30%;
+    float: left;
+}
+
+.submit1 {
+    background-color: rgba(245, 176, 120, 0.8);
+    color: white;
+    border-radius: 50px;
+    border: 2px solid rgb(185, 185, 185);
+    padding: 1.5%;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.submit1:hover {
+    background-color: rgba(245, 176, 120, 1);
+    color: white;
+    box-shadow: 1.5px 1.5px 2px black;
+    border-radius: 50px;
+}
+
+.submit2 {
+    background-color: rgba(85, 160, 221, 0.8);
+    color: white;
+    border-radius: 50px;
+    border: 2px solid rgb(185, 185, 185);
+    padding: 1.5%;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.submit2:hover {
+    background-color: rgba(85, 160, 221, 1);
+    color: white;
+    box-shadow: 1.5px 1.5px 2px black;
+    border-radius: 50px;
+}
+
+
+.ex-run {
+    pointer-events: none;
+}
+
+.ex-swim {
+    pointer-events: none;
+}
+
+.exTitle,
+.s2content {
+    color: black;
+}
+
+.reset-icon{
+    border: 0;
+    border-radius: 50%;
+    background-color: white;
+    padding-right: 50px;
+}
+
+.paddingleft{
+    margin-left: 10px;
+}
+
+/* runInput */
+.s4bgimg {
+    display: block;
+    position: absolute;
+    width: 76%;
+    background-image: url("Images/s3Runner.png");
+    background-size: 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+    height:85vh;
+    top:10%;
+}
+
+.sport-shoe {
+    width: 20%;
+    display: block;
+    position: absolute;
+    z-index: 2;
+    right: 5%;
+    bottom: 15%;
+}
+
+.run-form {
+    text-align: center;
+    border-radius: 20px;
+}
+
+.ex-title,
+.ex-subtitle {
+    text-align: center;
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+.ex-title {
+    font-weight: 600;
+    font-size: 80px;
+    filter: blur();
+    color: transparent;
+    opacity: 60% !important;
+    text-shadow: 0 0 2px white;
+    padding-top: 40%;
+}
+
+.ex-subtitle {
+    font-weight: 600;
+    font-size: 20px;
+    filter: blur();
+    color: white;
+    padding-top: 10%;
+}
+
+.s4-content {
+    font-weight: 100 !important;
+}
+
+label {
+    font-weight: 100;
+    margin-bottom: 0px;
+}
+
+#yogaChartContent,
+#runChartContent {
+    display: none;
+}
+
+.color-grey{
+    color: grey;
+}
+
+.bg-white{
+    background-color: rgb(255, 255, 255, 0.6);
+}
+.bg-white p{
+    margin:6px 0;
+}
+
+#s1{
+    z-index: 10000;
+}
+
+.margin-top
+{
+    margin-top: 12vh;
+    text-align: center;
+}
