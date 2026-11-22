@@ -4,6 +4,8 @@ A single-page web app that turns a weekly exercise routine into levels. You log 
 
 Built with HTML, CSS and JavaScript as a diploma project at Republic Polytechnic.
 
+**Live demo:** https://hui0w0.github.io/ExerciseTracker/
+
 ## What it does
 
 - **Three levels, each with a weekly goal:** Level 1 is 5 hours of yoga, Level 2 is 8 km of running and Level 3 is 15 laps of swimming. Each level stays locked until you pass the one before it.
@@ -24,7 +26,7 @@ Built with HTML, CSS and JavaScript as a diploma project at Republic Polytechnic
 
 ## Run it
 
-No build step is needed. Clone the repo and open `index.html` in a browser:
+Try it at https://hui0w0.github.io/ExerciseTracker/, or clone the repo and open `index.html` in a browser. No build step is needed.
 
 ```
 git clone https://github.com/hui0w0/ExerciseTracker.git
